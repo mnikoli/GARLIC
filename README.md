@@ -42,4 +42,4 @@ Once all GARLIC dependencies are met (binaries, packages and libraries), please 
 4. Connect to MySQL and create new database with a command: ```mysql -u root -p ```. You will be asked to provide your mysql password. 
 5. Once you have logged in to MySQL, the next step is to create new database called ```test_significance1``` using command: ```create database test_significance1;``` and then type ```exit;```.
 6. Last step is to import data (located in folder of the downloaded package, needs to be unzipped first) to the newly created database using a command: mysql -u root -p test_significance1 < garlic_db_dump_xx.xxx.sql
-7. And that’s all! If you want to run the software use:  python /path_to_garlic/GARLIC/s
+7. And that’s all! If you want to run the software use:  ```python /path_to_garlic/GARLIC/scripts/garlic.py```.
