@@ -69,8 +69,10 @@ Options:
 		Used to etiologically connect human complex diseases and cell type-specific CRE maps.
 testCellTypes 	garlic testCellTypes <did>
   		did    	     		Disease/trait id from database
+```
 Description:
 		Determines how “relevant” regulatory maps from different cell types are for a given disease/trait did. 
+```
 integrateGWAS	garlic integrateGWAS gwas_input ld_input
  		gwas_input 		Path to GWAS file
   		ld_input    		Path to LD file
@@ -79,7 +81,7 @@ Description:
 Add unpublished GWAS datasets to database.
 ```
 generateRegionSNPOverlaps	garlic generateRegionSNPOverlaps chr start end
-chr         			Chromosome name
+chr         				Chromosome name
   		start     		Beginning of the region
   		end         		End of the region
 ```
@@ -99,11 +101,11 @@ Description:
 analyseCombinations	garlic analyseCombinations [-h] [-c NUM_COMB_EL] [-t NUM_THREADS] [-s SEED] [-n NUM_COMB_TEST] [-p P_VALUE] [-m P_VALUE_IMPROVEMENT] did
   		did			Disease/trait id from database
 Options:
-  		-c NUM_COMB_EL	Maximum number of regulatory maps in combination [2].
-  		-t NUM_THREADS	Number of threads.
+  		-c NUM_COMB_EL		Maximum number of regulatory maps in combination [2].
+  		-t NUM_THREADS		Number of threads.
   		-s SEED			Parameter to limit the number of 'seed' regulatory maps which are use d as a basis to make combinations
   		-n NUM_COMB_TEST	Number of candidate combinations to test [3].
-  		-p P_VALUE		Use only those regulatory maps for which input disease has p value greater than a given parameter [0.001].
+  		-p P_VALUE		Use only those regulatory maps for which input disease has p value greater than a 		      given parameter [0.001].
   		-m P_VALUE_IMPROVE	Magnitude of p value improvement [5].
 ```
 Description:
