@@ -16,10 +16,8 @@ In case you are missing some of the above listed you can install them using seve
 2. sudo apt-get upgrade
 3. sudo apt-get install <package_name>
 ```
-, where 
-```
-<package_name>
-``` 
+, where *<package_name>*
+
 should be changed to one of the packaged names (corresponding to Ubuntu/Mint pacakges) below:
 * r-base  (for R)
 * bedtools (for Bedtools)
