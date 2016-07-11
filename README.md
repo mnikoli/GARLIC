@@ -35,6 +35,7 @@ Missing Python packages can be installed using command ```sudo pip install <pack
 ######Setup   
 GARLIC scripts can be used directly after download, with a few minor adjustments need applied. 
 Once all GARLIC dependencies are met (binaries, packages and libraries), please follow the steps below:
+
 1. download GARLIC.vXXX.zip from (bifacility.uni-koeln.de/viewer.php/GARLIC.v1.0.zip)
 2. unzip the file
 3. open /path_to_garlic/GARLIC/scripts/MySQL_connect.py (line 6) and change user and pass to match the ones you setup during MySQL server installation. In case you provided only a password, your user name is ```root```.
