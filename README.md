@@ -47,7 +47,7 @@ That’s all! If you want to run the software use:  ```python /path_to_garlic/GA
 
 ##Usage
 
-garlic.py [-h] {viewTableData, testDiseases, testCellTypes, integrateGWAS, generateRegionSNPOverlaps, generateMapSNPOverlaps, analyseCombinations}
+```garlic.py [-h] {viewTableData, testDiseases, testCellTypes, integrateGWAS, generateRegionSNPOverlaps, generateMapSNPOverlaps, analyseCombinations}
 
 
 
@@ -122,5 +122,5 @@ Options:
 
 Description:
 		Algorithm tries to identifiy groups of cell types from different cell types with an increased etiological contribution to a given disease/trait.  
-
+```
 
