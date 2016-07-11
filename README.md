@@ -15,7 +15,11 @@ In case you are missing some of the above listed you can install them using seve
 1. sudo apt-get update
 2. sudo apt-get upgrade
 3. sudo apt-get install <package_name>
-```, where ```<package_name>``` 
+```
+, where 
+```
+<package_name>
+``` 
 should be changed to one of the packaged names (corresponding to Ubuntu/Mint pacakges) below:
 * r-base  (for R)
 * bedtools (for Bedtools)
@@ -29,10 +33,8 @@ GARLIC also uses non-default Python packages:
 * rpy2
 * xlwt
 
-Missing Python packages can be installed using command 
-```sudo pip install <package_name>``` 
-(if you don’t have pip, use ```sudo apt-get install python-pip```
-)
+Missing Python packages can be installed using command ```sudo pip install <package_name>``` 
+(if you don’t have pip, use ```sudo apt-get install python-pip```)
 
 ######Setup   
 GARLIC scripts can be directly used directly after download, no installation is needed, but minor adjustments need applied. 
