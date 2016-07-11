@@ -10,6 +10,7 @@ In order to run GARLIC, you need to have installed additional binaries and libra
 * Bedtools (with exported path to $PATH variable)
 * MySQL server
 * Python MySQLdb
+
 In case you are missing some of the above listed you can install them using several commands from the terminal, as listed below:
 ```
 1. sudo apt-get update
