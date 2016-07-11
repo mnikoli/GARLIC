@@ -29,8 +29,7 @@ GARLIC also uses non-default Python packages:
 * rpy2
 * xlwt
 
-Missing Python packages can be installed using command ```sudo pip install <package_name>``` 
-(if you don’t have pip, use ```sudo apt-get install python-pip```)
+Missing Python packages can be installed using command ```sudo pip install <package_name>```. if you don’t have pip, you can install it with ```sudo apt-get install python-pip```.
 
 ######Setup   
 GARLIC scripts can be used directly after download, with a few minor adjustments need applied. 
