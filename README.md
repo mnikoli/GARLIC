@@ -16,7 +16,7 @@ In case you are missing some of the above listed you can install them using seve
 2. sudo apt-get upgrade
 3. sudo apt-get install <package_name>
 ```
-, where <package_name> should be changed to one of the packaged names (corresponding to Ubuntu/Mint pacakges) below:
+, where <package_name> should be changed to one of the package names (corresponding to Ubuntu/Mint pacakges) below:
 * r-base  (for R)
 * bedtools (for Bedtools)
 * mysql-server
@@ -33,14 +33,12 @@ Missing Python packages can be installed using command ```sudo pip install <pack
 (if you don’t have pip, use ```sudo apt-get install python-pip```)
 
 ######Setup   
-GARLIC scripts can be directly used directly after download, no installation is needed, but minor adjustments need applied. 
-Once all GARLIC dependencies (binaries, packages and libraries) are installed:
+GARLIC scripts can be used directly after download, with a few minor adjustments need applied. 
+Once all GARLIC dependencies are met (binaries, packages and libraries), please follow the steps below:
 1. download GARLIC.vXXX.zip from (bifacility.uni-koeln.de/viewer.php/GARLIC.v1.0.zip)
 2. unzip the file
-3. open /path_to_garlic/GARLIC/scripts/MySQL_connect.py
-in line 6: change user and pass to match the ones you setup during MySQL server installation. In case you provided only a password, your user name is ```root```
-.
-4. Connect to MySQL and create new database using a command: mysql -u root -p and providing you mysql password. After execution, you will have to type your password by hand. 
-5. Once you have logged in to MySQL create new database called test_significance1 using command: ‘create database test_significance1;’ and then type ‘exit;’.
-6. Last step is to import data (located in folder of the downloaded package, but needs to be uncompressed as well) to the newly created database using a command: mysql -u root -p test_significance1 < garlic_db_dump_xx.xxx.sql
+3. open /path_to_garlic/GARLIC/scripts/MySQL_connect.py (line 6) and change user and pass to match the ones you setup during MySQL server installation. In case you provided only a password, your user name is ```root```.
+4. Connect to MySQL and create new database with a command: ```mysql -u root -p ```. You will be asked to provide your mysql password. 
+5. Once you have logged in to MySQL, the next step is to create new database called ```test_significance1``` using command: ```create database test_significance1;``` and then type ```exit;```.
+6. Last step is to import data (located in folder of the downloaded package, needs to be unzipped first) to the newly created database using a command: mysql -u root -p test_significance1 < garlic_db_dump_xx.xxx.sql
 7. And that’s all! If you want to run the software use:  python /path_to_garlic/GARLIC/s
