@@ -1,7 +1,7 @@
-# GARLIC
+# GARLIC Software
 ## About
 ## Installation
-### Requirements
+###### Requirements
 
 The GARLIC software was designed in Python (2.7.x) and MySQL and tested under Ubuntu/Mint environment, but should be possible to install and run it on other OS.
 
@@ -11,11 +11,11 @@ In order to run GARLIC, you need to have installed additional binaries and libra
 * MySQL server
 * Python MySQLdb
 In case you are missing some of the above listed you can install them using several commands from the terminal, as listed below:
-
+'
 1. sudo apt-get update
 2. sudo apt-get upgrade
-3. sudo apt-get install <package_name>, 
-where <package_name> should be changed to one of the packaged names (corresponding to Ubuntu/Mint pacakges) below:
+3. sudo apt-get install <package_name>', 
+where '<package_name>' should be changed to one of the packaged names (corresponding to Ubuntu/Mint pacakges) below:
 * r-base  (for R)
 * bedtools (for Bedtools)
 * mysql-server
@@ -28,9 +28,9 @@ GARLIC also uses non-default Python packages:
 * rpy2
 * xlwt
 
-Missing Python packages can be installed using command sudo pip install <package_name> (if you don’t have pip, use sudo apt-get install python-pip)
+Missing Python packages can be installed using command 'sudo pip install <package_name>' (if you don’t have pip, use 'sudo apt-get install python-pip')
 
-   Setup   
+######Setup   
 GARLIC scripts can be directly used directly after download, no installation is needed, but minor adjustments need applied. 
 Once all GARLIC dependencies (binaries, packages and libraries) are installed:
 1. download GARLIC.vXXX.zip from (bifacility.uni-koeln.de/viewer.php/GARLIC.v1.0.zip)
