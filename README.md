@@ -53,7 +53,7 @@ garlic.py [-h] {viewTableData, testDiseases, testCellTypes, integrateGWAS, gener
 ```
 viewTableData 	galic viewTableData [-n TABLE_NAME]
 Options:
-  		-n TABLE_NAME  	Database table name
+  		-n TABLE_NAME  		Database table name
 ```
 Description:
 Lists the contents of the given table from the database. If table_name is not provided, a list of available table names is printed as output.
@@ -81,7 +81,7 @@ Description:
 Add unpublished GWAS datasets to database.
 ```
 generateRegionSNPOverlaps	garlic generateRegionSNPOverlaps chr start end
-chr         				Chromosome name
+		chr			Chromosome name
   		start     		Beginning of the region
   		end         		End of the region
 ```
@@ -111,3 +111,4 @@ Options:
 Description:
 		Algorithm tries to identifiy groups of cell types from different cell types with an increased etiological contribution to a given disease/trait.
 
+##Examples
