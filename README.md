@@ -1,5 +1,6 @@
 # GARLIC Software
 ## About
+GARLIC (GWAS-based Prediction Toolkit for connecting Diseases and Cell Types) is a user-friendly computational toolkit that enabls users to etiologically connect human diseases/traits with relevant cell types/tissues through our novel method based on the overlaps between disease-associated genetic variants and cis-regulatory elements, without any a priori assumptions.
 ## Installation
 ###### Requirements
 
