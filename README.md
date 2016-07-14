@@ -95,7 +95,7 @@ generateMapSNPOverlaps	garlic generateMapSNPOverlaps [-d did] [-m REG_MAP_ID] [-
 Options:
   		-d did           	One or more disease ids, separated by comma
 		-m REG_MAP_ID		Regulatory map id (if already in database)
-  		-i REG_MAP_PATH 	Path to a regulatory map file (if not in database)
+  		-i REG_MAP_PATH 	Path to a regulatory map file in BED format (if not in database)
   		-n REG_MAP_NAME  	Given name for the new regulatory map
 ```
 Description:
