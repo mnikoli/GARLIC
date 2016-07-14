@@ -60,7 +60,7 @@ Description:
 Lists the contents of a given table from the database. If table_name is not provided (by default), a list of available table names is printed as output. Otherwise, all (tab-delimited) columns and table content are printed to standard output. It is recommended to add ```> output_file_name.csv``` at the end of command to save the output in a separate file, as tables contain many rows.  
 ```
 testDiseases 	garlic testDiseases [-n REG_MAP_NAME] [-l MIN_GRR_NUM][-t NUM_THREADS] [-s NUM_ITERS] <path>
-path			path to regulatory map
+path			path to cell type or tissue regulatory map
 Options:
 -n REG_MAP_NAME  	Given name for the new regulatory map
   		-l MIN_GRR_NUM   	Minimum number of GRRs in disease
