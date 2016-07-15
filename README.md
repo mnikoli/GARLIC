@@ -123,18 +123,18 @@ Here are some examples on how GARLIC can be used:
 ```python garlic.py generateRegionSNPOverlaps chr12 114790735 114849728```
 
 
-**Exmaple 2. Retrieve SNPs associated with the Congenital Heart Malformation using DHS regulatory map from fetal heart.**
+**Exmaple 2. Retrieve SNPs associated with the <Congenital Heart Malformation> using DHS regulatory map from <fetal heart>.**
 
 ```python garlic.py generateMapSNPOverlaps -m 30 -d 336```
 
 ```python garlic.py generateMapSNPOverlaps -i /path_to_GARLIC_folder/DHS_maps/Fetal_Heart_input.csv -d 336```.
 
 
-**Example 3. Test the effect of paired cell types/tissues on Type 1 diabetes autoantibodies.**
+**Example 3. Test the effect of paired cell types/tissues on <Dietary macronutrient intake>.**
 
-```python garlic.py analyseCombinations -d 747``` 	
+```python garlic.py analyseCombinations -d 375``` 	
 
 
-**Example 4. Identify etiologically relevant cell types/tissues for a disease Atrial fibrilation.**
+**Example 4. Identify etiologically relevant cell types/tissues for a disease <Atrial fibrilation>.**
 
 ```python garlic.py testCellTypes 641``` 		
