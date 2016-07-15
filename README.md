@@ -119,14 +119,18 @@ Description:
 Here are some examples on how GARLIC can be used:
 
 Retrieve all diseases/traits associated with TBX5 locus (extended 1kb in both directions)
+
 ```python garlic.py generateRegionSNPOverlaps chr12 114790735 114849728```
 
 Retrieve SNPs associated with the Congenital Heart Malformation using DHS regulatory map from fetal heart. 
+
 ```python garlic.py generateMapSNPOverlaps -m 30 -d 336```
 ```python garlic.py generateMapSNPOverlaps -i /path_to_GARLIC_folder/DHS_maps/Fetal_Heart_input.csv -d 336```.
 
 Test the effect of paired cell types/tissues on Type 1 diabetes autoantibodies
+
 ```python garlic.py analyseCombinations -d 747``` 	
 
 Identify etiologically relevant cell types/tissues for a disease Atrial fibrilation
+
 ```python garlic.py testCellTypes 641``` 		
