@@ -1,8 +1,8 @@
 # GARLIC Software
-## About
+# About
 GARLIC (GWAS-based Prediction Toolkit for connecting Diseases and Cell Types) is a user-friendly computational toolkit that enabls users to etiologically connect human diseases/traits with relevant cell types/tissues through our novel method based on the overlaps between disease-associated genetic variants and cis-regulatory elements, without any a priori assumptions.
-## Installation
-###### Requirements
+# Installation
+## Requirements
 
 The GARLIC software was designed in Python (2.7.x) and MySQL and tested under Ubuntu/Mint environment, but should be possible to install and run it on other OS.
 
@@ -33,7 +33,7 @@ GARLIC also uses non-default Python packages:
 
 Missing Python packages can be installed using command ```sudo pip install <package_name>```. if you don’t have pip, you can install it with ```sudo apt-get install python-pip```.
 
-######Setup   
+##Setup   
 GARLIC scripts can be directly used after download, and although no installation is needed, minor adjustments need to be made. 
 Once all GARLIC dependencies are met (binaries, packages and libraries), please follow the steps below:
 
@@ -116,11 +116,17 @@ Description:
 
 ##Examples
 
-Here are some examples how GARLIC can be used:
+Here are some examples on how GARLIC can be used:
 
-python garlic.py generateRegionSNPOverlaps chr12 114790735 114849728	#TBX5 example
+######Retrieve all diseases/traits associated with TBX5 locus (extended 1kb in both directions)
+python garlic.py generateRegionSNPOverlaps chr12 114790735 114849728	
 
-python garlic.py generateMapSNPOverlaps -m 30 -d 336 or ./garlic.py generateMapSNPOverlaps -i /path_to_GARLIC_folder/DHS_maps/Fetal_Heart_input.csv -d 336. 		#Congenital Heart Malformation example
+######Retrieve SNPs associated with the Congenital Heart Malformation using DHS regulatory map from fetal heart. 
+python garlic.py generateMapSNPOverlaps -m 30 -d 336 
+python garlic.py generateMapSNPOverlaps -i /path_to_GARLIC_folder/DHS_maps/Fetal_Heart_input.csv -d 336. 		
 
-python garlic.py analyseCombinations -d 747 				#Type 1 diabetes autoantibodies example
-python garlic.py testCellTypes 641 					# Cell type relevance for disease Atrial fibrilation
+######Test the effect of paired cell types/tissues on Type 1 diabetes autoantibodies
+python garlic.py analyseCombinations -d 747 	
+
+######Identify etiologically relevant cell types/tissues for a disease Atrial fibrilation
+python garlic.py testCellTypes 641 		
