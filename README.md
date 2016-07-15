@@ -42,7 +42,7 @@ Once all GARLIC dependencies are met (binaries, packages and libraries), please 
 3. open /path_to_garlic/GARLIC/scripts/MySQL_connect.py (line 6) and change user and pass to match the ones you setup during MySQL server installation. In case you provided only a password, your user name is ```root```.
 4. Connect to MySQL and create a new database using the following command: ```mysql -u root -p ``` (for a user ```root```). You will be asked to type in your mysql password. 
 5. Once you have logged in to MySQL, the next step is to create new database called ```test_significance1``` using command: ```create database test_significance1;``` and then type ```exit;```.
-6. Last step is to download mysql dump file from http://bifacility.uni-koeln.de/GARLIC/garlic_db_dump_06.16.sql.zip, unpack the file and import it to the newly created database using the following command: mysql -u root -p test_significance1 < garlic_db_dump_06.16.sql. 
+6. Last step is to download mysql dump file by clicking [here] (http://bifacility.uni-koeln.de/GARLIC/garlic_db_dump_06.16.sql.zip), unpack the file and import it to the newly created database using the following command: mysql -u root -p test_significance1 < garlic_db_dump_06.16.sql. 
 
 That’s all! If you want to run the software use:  ```python /path_to_garlic/GARLIC/scripts/garlic.py```. Complete list of available commands and options with examples are provided further in text.
 
@@ -118,24 +118,24 @@ Description:
 
 Here are some examples on how GARLIC can be used:
 
-**Example 1.** Retrieve all diseases/traits associated with * *TBX5* * locus (extended 1kb in both directions):
+**Example 1.** Retrieve all diseases/traits associated with *TBX5* locus (extended 1kb in both directions):
 
 ```python garlic.py generateRegionSNPOverlaps chr12 114790735 114849728```
 
 
-**Exmaple 2.** Retrieve SNPs associated with the * *Congenital Heart Malformation* * using DHS regulatory map from * *fetal heart* *:
+**Exmaple 2.** Retrieve SNPs associated with the *Congenital Heart Malformation* using DHS regulatory map from *fetal heart*:
 
 ```python garlic.py generateMapSNPOverlaps -m 30 -d 336```
 
 ```python garlic.py generateMapSNPOverlaps -i /path_to_GARLIC_folder/DHS_maps/Fetal_Heart_input.csv -d 336```.
 
 
-**Example 3.** Test the effect of paired cell types/tissues on * *Dietary macronutrient intake* *:
+**Example 3.** Test the effect of paired cell types/tissues on *Dietary macronutrient intake*:
 
 ```python garlic.py analyseCombinations -d 375``` 	
 
 
-**Example 4.** Identify etiologically relevant cell types/tissues for * *Atrial fibrilation* *:
+**Example 4.** Identify etiologically relevant cell types/tissues for *Atrial fibrilation*:
 
 ```python garlic.py testCellTypes 641``` 
 
