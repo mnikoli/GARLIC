@@ -42,7 +42,7 @@ Once all GARLIC dependencies are met (binaries, packages and libraries), please 
 3. open /path_to_garlic/GARLIC/scripts/MySQL_connect.py (line 6) and change user and pass to match the ones you setup during MySQL server installation. In case you provided only a password, your user name is ```root```.
 4. Connect to MySQL and create a new database using the following command: ```mysql -u root -p ``` (for a user ```root```). You will be asked to type in your mysql password. 
 5. Once you have logged in to MySQL, the next step is to create new database called ```test_significance1``` using command: ```create database test_significance1;``` and then type ```exit;```.
-6. Last step is to download mysql dump file from http://bifacility.uni-koeln.de/GARLIC/garlic_db_dump_06.16.sql.zip,unzip the file and import it to the newly created database using the following command: mysql -u root -p test_significance1 < garlic_db_dump_06.16.sql. 
+6. Last step is to download mysql dump file from http://bifacility.uni-koeln.de/GARLIC/garlic_db_dump_06.16.sql.zip, unzip the file and import it to the newly created database using the following command: mysql -u root -p test_significance1 < garlic_db_dump_06.16.sql. 
 
 That’s all! If you want to run the software use:  ```python /path_to_garlic/GARLIC/scripts/garlic.py```. Complete list of available commands and options with examples are provided further in text.
 
